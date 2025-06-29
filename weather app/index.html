@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus - Modern Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="app-container">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search city...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="location-btn"><i class="fas fa-location-arrow"></i></button>
+            </div>
+            
+            <div class="weather-display">
+                <div class="current-weather">
+                    <div class="weather-main">
+                        <div class="weather-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="temperature">24°</div>
+                        <div class="weather-description">Sunny</div>
+                    </div>
+                    
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <span class="detail-value">12 km/h</span>
+                            <span class="detail-label">Wind</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <span class="detail-value">65%</span>
+                            <span class="detail-label">Humidity</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <span class="detail-value">1012 hPa</span>
+                            <span class="detail-label">Pressure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-time">
+                    <h1 class="location">New York, US</h1>
+                    <div class="date-time">Monday, June 12, 2023 • 3:45 PM</div>
+                </div>
+                
+                <div class="forecast-container">
+                    <h2 class="forecast-title">5-Day Forecast</h2>
+                    <div class="forecast-items">
+                        <!-- Forecast items will be added dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="background-animation">
+            <div class="particles"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
